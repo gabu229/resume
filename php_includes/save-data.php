@@ -22,7 +22,7 @@
         
         else {
             $cnt = "Name:      " . $name . " \n" . "Email:     " . $email . " \n" . "Message:   " . $message . "\nDate:      "  . date("Y-m-d h:i:s:a") . " \n \n \n" ;
-            $cnt = wordwrap($cnt, 70);
+            // $cnt = wordwrap($cnt, 70);
 
             // mail('oriegabriel16@gmail.com', 'Message From ' . $name . 'Via Resume', $cnt);
 
