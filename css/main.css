@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(210, 220, 233);
+}
+
+hr {
+    background-color: rgb(10, 27, 48);
+    margin-top: 0px;
+    margin-left: 0px;
+    border: 1px solid;
+}
+
+#mainDiv {
+    box-shadow: 7px 7px 5px rgb(15, 14, 41);
+}
+
+#left {
+    background-color: rgb(10, 27, 48);
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+}
+#right {
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 27, 48);
+    min-height: 100vh;
+}
+
+#right a {
+    color: rgb(10, 27, 48);
+}
+
+.shd-rgt {
+    box-shadow: 5px 5px 10px rgb(15, 14, 41);
+}
+
+.lft-bdr {
+    background-color: rgb(238, 247, 255);
+    border-left: 2px solid rgb(10, 27, 48);
+    padding: 3px 0px;
+}
+
+.lft-bdr + .lft-bdr {
+    margin-top: 5px;
+}
+
+.btn-main {
+    background-color: rgb(10, 27, 48);
+    color: white;
+}
+
+.lght {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.lght:hover {
+    opacity: 1.0;
+}
+
