@@ -7,6 +7,11 @@
         <link rel="stylesheet" href="css/main.css" />
         <script src="js/jquery.js"></script>
         <script src="assets/bootstrap-4.0.0/js/bootstrap.js"></script>
+
+        <!-- ONLINE CDNs -->
+        <script src="https://use.fontawesome.com/8c7d56aba8.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        
     </head>
     
     <body>
