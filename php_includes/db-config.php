@@ -6,7 +6,7 @@
 
     $connect = new mysqli($server, $username, $password, $db);
 
-    if ($connect -> connect_error) {
-        die('Sorry! An Error Occured.');
-    }
+    // if ($connect -> connect_error) {
+    //     die('Sorry! An Error Occured.');
+    // }
 ?>
