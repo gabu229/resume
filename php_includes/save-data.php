@@ -22,7 +22,7 @@
         // THE CONDITION BELOW WILL RETURN TRUE BECAUSE OF AGSENCE OF DATABASE
 
         else {
-            $file = fopen('../contacts.txt', 'a');
+            $file = fopen('contacts.txt', 'a');
             $cnt = "Name:      " . $name . " \n" . "Email:     " . $email . " \n" . "Message:   " . $message . "\nDate:      "  . date("Y-m-d h:i:s:a") . " \n \n \n" ;
             fwrite($file, $cnt);
 
