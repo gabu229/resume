@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,17 +9,17 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/bootstrap.css" />
         <script src="js/jquery.js"></script>
-        <script src="assets/bootstrap-4.0.0/js/bootstrap.js"></script>
-
-        <!-- ONLINE CDNs -->
-        <!--         
-        <script src="https://use.fontawesome.com/8c7d56aba8.js"></script> -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="js/bootstrap.js"></script>
 
     </head>
     
     <body>
         <div class="container-fluid mt-4 mb-5" id="">
+            <div class="row">
+                <div class="col-10 col-md-8 offset-md-2 offset-1 alert alert-success alert-dismissable fade show" role="alert">
+                    <p><?php echo $_SESSION['message']; ?></p>
+                </div>
+            </div>
             <div class="row" id="">
                 <div class="col-3 col-lg-2 offset-lg-2 offset-1 pl-3 pt-5 shd-rgt pb-4 d-none d-sm-block" id="left">
                     <div class="col-10 offset-1 bg-light" style="padding-top: 85%; overflow: hide; border-radius: 50%;">
@@ -123,7 +126,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <p>Or leave a message</p>
-                            <form class="" role="form" action="" method="post">
+                            <form class="" role="form" action="php_includes/save-data.php" method="post">
                                 <div class="input-group mb-3">
                                     <input class="form-control" type="text" name="name" placeholder="Your Name Here..." required="required"/>
                                 </div>
@@ -133,7 +136,7 @@
                                 </div>
                                 
                                 <div class="input-group mb-3">
-                                    <textarea class="form-control" placeholder="Enter message here..." style="min-height: 20vh;"></textarea>
+                                    <textarea class="form-control" name="message" placeholder="Enter message here..." style="min-height: 20vh;"></textarea>
                                 </div>
                                 
                                 <small type="" class="" style="cursor: pointer;"></small>
@@ -141,7 +144,8 @@
                                 <button type="submit" class="btn btn-main mt-3 btn-sm" >SEND MESSAGE</button>
                             </form>
                         </div>
-                        <a href="https://zuri.team" target="_blank"><div class="col-12 mt-5 lght"><center>
+                        <a href="https://zuri.team" target="_blank"><div class="col-12 ml-3 mt-5 lght">
+                        <center>
                             <small>Powered by:</small>
                             <br/>
                             <img src="./images/hng.png" class="" width="100" alt="">
@@ -153,9 +157,10 @@
                             <small class="font-weight-bold">HNGI8, I4G and Zuri Internship Programme</small>
 
                             <br/><br/>
-
+                            
                             <small class="font-weight-bold">&copy; 2021</small>
-                        </center></div></a>
+                            </center>
+                        </div></a>
                     </div>
                 </div>
             </div>

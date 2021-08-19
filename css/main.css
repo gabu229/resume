@@ -42,7 +42,7 @@ hr {
     margin-top: 5px;
 }
 
-.btn-main {
+.btn-main, button {
     background-color: rgb(10, 27, 48);
     color: white;
 }
@@ -55,4 +55,3 @@ hr {
 .lght:hover {
     opacity: 1.0;
 }
-
