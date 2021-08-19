@@ -19,22 +19,21 @@
             header('location: ../index.php');
         }
 
-        // THE CONDITION BELOW WILL RETURN TRUE BECAUSE OF ABSENCE OF DATABASE
-
+        
         else {
             $cnt = "Name:      " . $name . " \n" . "Email:     " . $email . " \n" . "Message:   " . $message . "\nDate:      "  . date("Y-m-d h:i:s:a") . " \n \n \n" ;
             $cnt = wordwrap($cnt, 70);
 
-            mail('oriegabriel16@gmail.com', 'Message From ' . $name . 'Via Resume', $cnt);
+            // mail('oriegabriel16@gmail.com', 'Message From ' . $name . 'Via Resume', $cnt);
 
-            header('location: ../index.php');
-
-            $file = fopen('../contacts.txt', 'a');
+            // $file = fopen('../contacts.txt', 'a');
             
-            fwrite($file, $cnt);
+            // fwrite($file, $cnt);
 
             $_SESSION['message'] = 'Your message has been successfully sent! Thanks for your response.';
             $_SESSION['message'] = '<div class="col-10 col-md-8 offset-md-2 offset-1 alert alert-success alert-dismissable fade show" role="alert"><p>' . $_SESSION["message"] . '</p></div>';
+
+            header('location: ../index.php');
 
         }
     }
