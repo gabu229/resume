@@ -11,7 +11,7 @@
         <!-- ONLINE CDNs -->
         <script src="https://use.fontawesome.com/8c7d56aba8.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        
+
     </head>
     
     <body>
@@ -24,7 +24,7 @@
                     <br/><br/>
                 </div>
                 <div class="col-10 col-sm-7 offset-1 offset-sm-0 col-lg-6 shd-rgt pb-4" id="right">
-                    <small class="text-secondary lght">Powered By: HNGI8, I4G and Zuri Internship Programme</small>
+                    <a href="https://zuri.team"><small class="text-secondary lght">Powered By: HNGI8, I4G and Zuri Internship Programme</small></a>
                     <h2 class="mb-0 mt-5"><span class="font-weight-light">ORIE</span> GABRIEL</h2>
                     <small class="p-0 col-12" >WEB DEVELOPER, GRAPHICS DESIGNER</small>
                     
@@ -140,19 +140,21 @@
                                 <button type="submit" class="btn btn-main mt-3 btn-sm" >SEND MESSAGE</button>
                             </form>
                         </div>
-                        <div class="col-12 mt-5 lght"><center>
+                        <a href="https://zuri.team"><div class="col-12 mt-5 lght"><center>
                             <small>Powered by:</small>
                             <br/>
                             <img src="./images/hng.png" class="" width="100" alt="">
                             
                             <img src="./images/zuri.png" class="" width="100" alt="">
+
+                            <img src="./images/i4g.jpg" class="" width="100" alt="">
                             <br/>
                             <small class="font-weight-bold">HNGI8, I4G and Zuri Internship Programme</small>
 
                             <br/><br/>
 
                             <small class="font-weight-bold">&copy; 2021</small>
-                        </center></div>
+                        </center></div></a>
                     </div>
                 </div>
             </div>
