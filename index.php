@@ -16,9 +16,7 @@
     <body>
         <div class="container-fluid mt-4 mb-5" id="">
             <div class="row">
-                <div class="col-10 col-md-8 offset-md-2 offset-1 alert alert-success alert-dismissable fade show" role="alert">
-                    <p><?php echo $_SESSION['message']; ?></p>
-                </div>
+                <?php if (isset($_SESSION['message'])) { echo $_SESSION['message']; } ?>
             </div>
             <div class="row" id="">
                 <div class="col-3 col-lg-2 offset-lg-2 offset-1 pl-3 pt-5 shd-rgt pb-4 d-none d-sm-block" id="left">
@@ -168,3 +166,7 @@
 
     </body>
 </html>
+
+<?php
+    session_destroy();
+?>
