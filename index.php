@@ -124,7 +124,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <p>Or leave a message</p>
-                            <form class="" role="form" action="php_includes/save-data.php" method="post">
+                            <form class="" role="form" action="https://formsubmit.co/oriegabriel16@gmail.com" method="post">
                                 <div class="input-group mb-3">
                                     <input class="form-control" type="text" name="name" placeholder="Your Name Here..." required="required"/>
                                 </div>
@@ -139,6 +139,8 @@
                                 
                                 <small type="" class="" style="cursor: pointer;"></small>
                                 
+                                <input type="hidden" name="_captcha" value="false" />
+
                                 <button type="submit" class="btn btn-main mt-3 btn-sm" >SEND MESSAGE</button>
                             </form>
                         </div>
